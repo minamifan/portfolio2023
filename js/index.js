@@ -14,10 +14,10 @@ function opentab(tabname){
 
 var sidemenu = document.getElementById("sidemenu");
 function openmenu(){
-    sidemenu.style.right = "0"
+    sidemenu.style.right = "0";
 }
 function closemenu(){
-    sidemenu.style.right = "-200px"
+    sidemenu.style.right = "-200px";
 }
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwoRcCNPqWm4aiQFepprviVipzwcNMhC4sJcZ65ztaPPG3DQX1_V5cj7_2fI3dbSeff/exec'
