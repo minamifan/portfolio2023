@@ -16,14 +16,14 @@
         <div class="container">
             <nav>
                 <img src="img/Jade-loge.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">RESUME</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars"onclick="openmenu()"></i>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">RESUME</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                <p>Web Designer</p>
@@ -33,44 +33,46 @@
     </div>
 <!-- -----------about-------- -->
     <div id="about">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="img/Jade.JPG" class="jade">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/Jade.JPG" class="jade">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my Website<br>
+                        Hello everyone, I am jade, welcome to my website,I do this website by my own. I graduated from Algonquin College, my major is Interactive Media Management.my career ideal is to be a web designer, from graphic design to web design, I Need to learn more about coding and I love the challenge.
+                        My specialty is art and dance, I am a person with a good personality, so I can make many friends.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Dedign</span><br>Design/Develop Web and App</li>
+                        <li><span>Graphic Design</span><br>Poster Design </li>
+                        <li><span>Artist</span><br>Painting works of art</li>
+                        <li><span>Photography</span><br>Shoot and edit film and television works/animations</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>January 2023-April 2023</span><br>UX/UI Designer(coop)</li>
+                        <li><span>2019– Present</span><br>Graphic Designer</li>
+                        <li><span>2019– 2021</span><br>Teacher (full-time)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sep 2022-June 2023</span><br>Interactive Media Management</li>
+                        <li><span>Sep 2016 - July 2019</span><br>Journalism and Communication</li>
+                        <li><span>Sep 2011 - July 2015</span><br>Advertising</li>
+                    </ul>
+                </div>
+                </div>
             </div>
-            <div class="about-col-1">
-                <h1 class="sub-title">About Me</h1>
-                <p>Welcome to my Website<br>
-                    Hello everyone, I am jade, welcome to my website,I do this website by my own. I graduated from Algonquin College, my major is Interactive Media Management.my career ideal is to be a web designer, from graphic design to web design, I Need to learn more about coding and I love the challenge.
-                    My specialty is art and dance, I am a person with a good personality, so I can make many friends.</p>
-              <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
-                <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                <p class="tab-links"onclick="opentab('education')">Education</p>
-              </div>
-              <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>Web Dedign</span><br>Design/Develop Web and App</li>
-                    <li><span>Graphic Design</span><br>Poster Design </li>
-                    <li><span>Artist</span><br>Painting works of art</li>
-                    <li><span>Photography</span><br>Shoot and edit film and television works/animations</li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="experience">
-                <ul>
-                    <li><span>January 2023-April 2023</span><br>UX/UI Designer(coop)</li>
-                    <li><span>2019– Present</span><br>Graphic Designer</li>
-                    <li><span>2019– 2021</span><br>Teacher (full-time)</li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>Sep 2022-June 2023</span><br>Interactive Media Management</li>
-                    <li><span>Sep 2016 - July 2019</span><br>Journalism and Communication</li>
-                    <li><span>Sep 2011 - July 2015</span><br>Advertising</li>
-                </ul>
-              </div>
-            </div>
-        </div>
+        </div> 
     </div>
     <!-- SERVICES -->
     <div id="services">
