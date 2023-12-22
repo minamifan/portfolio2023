@@ -10,6 +10,7 @@ html{
 body{
     background: #080808;
     color: #fff;
+
 }
 #header{
     width: 100%;
@@ -364,13 +365,7 @@ h2{
     margin: auto;
    
 }
-/* #mid p{
-    width: 30rem;
-    font-size: 1.5rem;
-} */
-/* #mid img{
-    width: 22rem;
-} */
+
 .content2 img{
     width: 30rem;
 }
@@ -406,16 +401,50 @@ h2{
 .article4 img{
     width: 15rem;
 }
+/* ------------------------photo---------------------------- */
+.photo{
+    max-width: 70rem;
+    text-align: center;
+    margin: auto;
+    /* display: grid;
+    grid-template-columns: repeat(2, 2fr); 
+    gap: 0px;  */
+}
+.photo img{
+   width: 70rem;
+}
+/* .photo{
+    position: relative;
+    left: 20%;
+} */
+
+/* .photo h3{
+    position: relative;
+    left: 27%;
+} */
+/* #photograph1{
+    display: flex;
+}
+#photograph2{
+    display: flex;
+} */
 /* ------------------------art---------------------------- */
 
 .art{
-    position: relative;
-    left: 20%;
+    /* max-width: 70rem; */
+    text-align: center;
+    margin: auto;
+    /* display: flex */
+    /* display: grid;
+    grid-template-columns: repeat(2, 2fr); 
+    gap: 0px;  */
+
+ 
 }
 .art img{
-    width: 30rem;
+    width: 50rem;
 }
-.art h3{
+/* .art h3{
     position: relative;
     left: 27%;
 }
@@ -424,13 +453,8 @@ h2{
 }
 #painting2{
     display: flex;
-}
-#photograph1{
-    display: flex;
-}
-#photograph2{
-    display: flex;
-}
+} */
+
 /* ---------------------css for small screen------------------ */
 nav .fas{
     display: none;
