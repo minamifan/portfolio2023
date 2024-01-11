@@ -321,7 +321,7 @@ form .btn2{
 }
 /* -----------story----------------- */
 .storyboard{
-    /* display: flex; */
+   
     justify-content: center;
     text-align: center;
 }
@@ -340,8 +340,7 @@ form .btn2{
 }
 /* -----------stickers----------------- */
 .sticker{
-    /* display: flex;
-    justify-content:left; */
+   
     max-width: 750px;
     margin-left: 450px;
 }
