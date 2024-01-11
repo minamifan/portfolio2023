@@ -319,6 +319,49 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+/* -----------story----------------- */
+.storyboard{
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+}
+.storyboard img{
+    width: 100rem;
+}
+/* -----------handwriting----------------- */
+.handwriting{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.handwriting img{
+    width: 26rem;
+}
+/* -----------stickers----------------- */
+.sticker{
+    /* display: flex;
+    justify-content:left; */
+    max-width: 750px;
+    margin-left: 450px;
+}
+.firstline{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.secondline{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 750px;
+}
+.secondline img{
+    width: 100px;
+}
+
 /* -----------web----------------- */
 .web{
     display:flex;
@@ -403,57 +446,26 @@ h2{
 }
 /* ------------------------photo---------------------------- */
 .photo{
-    max-width: 70rem;
-    text-align: center;
-    margin: auto;
-    /* display: grid;
-    grid-template-columns: repeat(2, 2fr); 
-    gap: 0px;  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .photo img{
-   width: 70rem;
+   width: 30rem;
+  
 }
-/* .photo{
-    position: relative;
-    left: 20%;
-} */
 
-/* .photo h3{
-    position: relative;
-    left: 27%;
-} */
-/* #photograph1{
-    display: flex;
-}
-#photograph2{
-    display: flex;
-} */
 /* ------------------------art---------------------------- */
 
 .art{
-    /* max-width: 70rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    margin: auto;
-    /* display: flex */
-    /* display: grid;
-    grid-template-columns: repeat(2, 2fr); 
-    gap: 0px;  */
-
- 
 }
 .art img{
-    width: 50rem;
+    width: 30rem;
 }
-/* .art h3{
-    position: relative;
-    left: 27%;
-}
-#painting1{
-    display: flex;
-}
-#painting2{
-    display: flex;
-} */
 
 /* ---------------------css for small screen------------------ */
 nav .fas{
