@@ -58,8 +58,8 @@ nav ul li a:hover::after{
 .header-text{
     margin-top:20%;
     font-size: 30px;
-    position: absolute;
-    left: 20rem;
+    /* position: absolute;
+    left: 20rem; */
 }
 .header-text h1{
     font-size: 60px;
@@ -388,60 +388,30 @@ h2{
     color: #ff004f;
 }
 /* ------------------graphic--------------- */
-.article1 {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-}
-.article1 p{
-    font-size: 1.5rem;
-    width: 30rem;
 
-}
-.article1 img{
-    width: 25rem;
-}
-#mid{
+.top1{
     display: flex;
     justify-content: center;
-    margin: auto;
-   
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 200px;
 }
-
-.content2 img{
-    width: 30rem;
+.top1 img{
+    height:1500px ;
 }
-.article2 p{
-    width: 30rem;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0px;
-  left: 50px;
-}
-.content3 img{
-    width: 20rem;
-}
-.article3 p{
-    width: 20rem;
-    font-size: 1.5rem;
-    position: relative;
-    top: -20px;
-  left: 50px;
-}
-.article3 a{
-    color:#ff004f
-}
-.article4 {
-    display: flex;
-    margin: auto;
+.top2{
+    text-align: center;
     justify-content: center;
+    margin-bottom: 200px;
 }
-.article4 p{
-    font-size: 1.5rem;
-    width: 35rem;
+.top2 img{
+    width: 2117px;
 }
-.article4 img{
-    width: 15rem;
+.article4 a{
+    color:#ff004f;
+}
+.article3{
+    margin-bottom: 200px;
 }
 /* ------------------------photo---------------------------- */
 .photo{
@@ -472,10 +442,10 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(../img/me.png) ;
+        background-image: url(../img/phone-me.png) ;
     }
     .header-text{
-        margin-top: 100%;
+        margin: 30%;
         font-size: 16px;
     }
     .header-text h1{
@@ -500,16 +470,11 @@ nav ul li{
     display: block;
     margin: 25px;
 }
-.fa-times {
+
+nav ul .fas{
     position: absolute;
     top:25px;
     left:25px ;
-    cursor: pointer;
-}
-.fa-bars {
-    position: absolute;
-    top:25px;
-    left:450px ;
     cursor: pointer;
 }
 .sub-title{
@@ -558,5 +523,45 @@ nav ul li{
     top:0px;
     left:0px ;
 }
+/* ------------sticker---------- */
+.firstline img{
+    width: 500px;
+}
+.sticker{
+    margin:0
+}
+/* ------------photo---------- */
+.photo img{
+     width: 400px;
+}
+/* ------------graphic---------- */
+.top1{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.top1 img{
+    width: 300px;
+    height: auto;
+}
+.article3{
+    margin-bottom: 40px;
+}
+.article4{
+    margin: 0px;
+}
+.graphic h2{
+    font-size: 1rem;
+}
+.top2 img{
+    width: 300px;
+    height: auto; 
+}
+/* --------art------------ */
+.art img{
+    width: 400px;
+}
+
+
+
 }
 
