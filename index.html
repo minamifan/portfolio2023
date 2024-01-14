@@ -17,10 +17,22 @@
             <nav>
                 <img src="img/Jade-loge.png" class="logo">
                 <ul id="sidemenu">
+                    <div>
                     <li><a href="#header">HOME</a></li>
+                    </div>
+                    <div>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    </div>
+                    <div class="dropdown">
+                      <li class="dropbtn"><a href="#">PORTFOLIO</a></li>
+                        <div class="dropdown-content">
+                         <li><a href="#services">My Service</a></li>
+                         <li><a href="#portfolio">My Work</a></li>
+                        </div>
+                    </div>
+                    <div>
                     <li><a href="#contact">RESUME</a></li>
+                    </div>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars"onclick="openmenu()"></i>
@@ -40,10 +52,10 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hello there! I'm Jade, and I'm thrilled to welcome you to my creative space crafted with HTML, CSS, and Javascript.
-                        <br>I am a multi-functional talent. I not only know graphic design, but also coding, and can do web development work. 
-                        <br>I am also a photographer, editor and illustrator. 
-                        <br>I also run my own social media in my daily life.</p>
+                    <p>Hello everyone, I'm Jade. Welcome to my self-created website. In this website, I've used <span>HTML, CSS, and JavaScript</span>.
+                        <br>I am a multi-functional talent. I not only know coding, but also graphic design. 
+                        I am also a Photographer, Video editor and Illustrator. 
+                       I also run my own social media in my daily life.</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
                     <p class="tab-links"onclick="opentab('experience')">Experience</p>
@@ -82,22 +94,25 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
+                <a href="./html/handwriting.html">
                 <i class="fa-solid fa-pen"></i>
-                <h2>Hand Writing</h2>
+                <h2>Hand Lettering</h2>
                 <p>These are all handwritten by me, not printed!</p>
-                <a href="./html/handwriting.html">Learn more</a>
+                <span>Learn more</span></a>
             </div>
             <div>
+                <a href="./html/sticker.html">
                 <i class="fa-solid fa-note-sticky"></i>
                 <h2>Chat stickers</h2>
                 <p>I am a contracted artist for WeChat stickers</p>
-                <a href="./html/sticker.html">Learn more</a>
+                <span>Learn more</span></a>
             </div>
             <div>
+                <a href="./html/photo.html">
                 <i class="fa-solid fa-photo-film"></i>
                 <h2>Photography</h2>
                 <p>I usually do freelance weddings and portraits. In photography, I am good at using my eye for beauty, looking for unique angles, and showing the beauty of different things.</p>
-                <a href="./html/photo.html">Learn more</a>
+                <span>Learn more</span></a>
             </div>
         </div>
        </div>
@@ -120,19 +135,24 @@
                 <div class="layer">
                     <h3>Graphic Design</h3>
                     <p>I pay more attention to the contrast of the design.  </p>
-                    <a href="html/graphic.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="./html/graphic.html"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="img/ocean.jpg">
                 <div class="layer">
                     <h3>Art works</h3>
-                    <p>I am good at using my eye for beauty, looking for unique angles, and showing the beauty of different things.  </p>
+                    <p>Showing the beauty of different things.</p>
                     <a href="./html/art.html"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn" >See more</a>
+        <p>
+        <span id="dots">...</span><span id="more">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/juW8Ym8a58o?si=qjmdFYnxiVd0rkof" frameborder =“0” allow="fullscreen">
+            </iframe></span></p>
+        <button onclick="myFunction()" id="myBtn">See more</button>
+        <!-- <a href="#" class="btn" >See more</a> -->
     </div>
 </div>
 <!-- ----------------contact------------------ -->
@@ -145,11 +165,10 @@
                 <p><i class="fa-solid fa-phone"></i>343-462-3082</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100085575712326"><i class="fa-brands fa-twitter-square"></i></a>
                     <a href="https://github.com/minamifan"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/hua-fan-309176254/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="img/resume.pdf" download class="btn btn2">Download Cv</a>
+                <a href="img/resume.pdf" download class="btn btn1">Download Cv</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
