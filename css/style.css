@@ -18,18 +18,60 @@ body{
     background-image:url(../img/backgroundimg.png) ;
     background-size: cover;
     background-position:center;
+
+}
+#sidemenu{
+    
+    position: fixed;
+    top: 0;
+    left: 50rem;
+    z-index: 3
+}
+
+/* ------------dropmenue------------- */
+.dropdown-content {
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    min-width: 30px;
+    z-index: 3;
+}
+.dropdown-content a{
+    color:#fff;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+   
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.dropdown-content li a:hover::after{
+    width: 100%;
 }
 .container{
     padding:10px 10%;
 }
-nav{
+
+.logo{
+    width: 140px;
+}
+nav ul{
     display:flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.logo{
-    width: 140px;
 }
 nav ul li{
     display: inline-block;
@@ -58,8 +100,6 @@ nav ul li a:hover::after{
 .header-text{
     margin-top:20%;
     font-size: 30px;
-    /* position: absolute;
-    left: 20rem; */
 }
 .header-text h1{
     font-size: 60px;
@@ -89,11 +129,15 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p span{
+    color:#b54769;
+}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
+
 .tab-titles{
    display: flex;
    margin: 20px 0 40px;
@@ -146,6 +190,9 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top:50px;
 }
+/* .services-list a span {
+    color: #ff004f;
+} */
 .services-list div{
     background: #262626;
     padding:40px;
@@ -174,6 +221,7 @@ nav ul li a:hover::after{
     background:#ff004f;
     transform: translateY(-10px);
 }
+
 /* ----------------portfolio------------------- */
 #portfolio{
     padding-left: 10rem;
@@ -236,19 +284,28 @@ transform: scale(1.1);
 .work:hover .layer{
     height: 100%;
 }
-.btn{
+#myBtn{
     display: block;
     margin: 50px auto;
     width: fit-content;
     border: 1px solid #ff004f;
+    background-color: #080808;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
 }
-.btn:hover{
+#myBtn:hover{
     background: #ff004f;
+}
+#more {display: none;}
+#dots{color: #080808;}
+/* ------------------------video---------------------- */
+iframe {
+    margin-top: 3rem;
+   margin-left: 28%;
+
 }
 /* --------------------contact---------------------- */
 .container{
@@ -284,8 +341,20 @@ transform: scale(1.1);
     color:#ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2{
-    display: inline-block;
+
+.btn{
+    display: block;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    background-color: #080808;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
     background: #ff004f;
 }
 .contact-right{
@@ -387,6 +456,10 @@ h2{
 .web figcaption :hover{
     color: #ff004f;
 }
+.web div:hover{
+    /* opacity: 0.7; */
+    transform: translateY(-10px);
+}
 /* ------------------graphic--------------- */
 
 .top1{
@@ -394,24 +467,24 @@ h2{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 }
 .top1 img{
-    height:1500px ;
+    height:500px ;
 }
 .top2{
     text-align: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 }
 .top2 img{
-    width: 2117px;
+    width: 700px;
 }
 .article4 a{
     color:#ff004f;
 }
 .article3{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 /* ------------------------photo---------------------------- */
 .photo{
@@ -445,8 +518,14 @@ nav .fas{
         background-image: url(../img/phone-me.png) ;
     }
     .header-text{
-        margin: 30%;
-        font-size: 16px;
+        margin-top: 100%;
+        margin-left: 20%;
+        font-size: 20px;
+    }
+    .logo{
+        position: absolute;
+        top:0px;
+        left:25px ;
     }
     .header-text h1{
         font-size: 30px;
@@ -470,17 +549,29 @@ nav ul li{
     display: block;
     margin: 25px;
 }
-
+nav .fas{
+    position: absolute;
+    top:25px;
+    left:250px ;
+    cursor: pointer;
+}
 nav ul .fas{
     position: absolute;
     top:25px;
     left:25px ;
     cursor: pointer;
 }
+/* --------------about------------- */
+.container{
+    margin: 10%;
+    padding: 0;
+}
 .sub-title{
+
     font-size :40px;
 }
 .about-col-1, .about-col-2{
+    margin-left: 0;
     flex-basis: 100%;
 }
 .about-col-1{
@@ -523,16 +614,23 @@ nav ul .fas{
     top:0px;
     left:0px ;
 }
+/* ------------hand---------- */
+.handwriting img{
+    width: 300px;
+}
 /* ------------sticker---------- */
 .firstline img{
-    width: 500px;
+    width: 300px;
+}
+.secondline img{
+    width: 250px;
 }
 .sticker{
     margin:0
 }
 /* ------------photo---------- */
 .photo img{
-     width: 400px;
+     width: 300px;
 }
 /* ------------graphic---------- */
 .top1{
